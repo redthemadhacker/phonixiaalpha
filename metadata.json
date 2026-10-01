@@ -1,0 +1,6 @@
+{
+  "name": "PHONIXIA",
+  "description": "The official multiplayer literacy MMORPG where language is magic. Explore voxel realms, master Science of Reading phonemes, decode words with companions Kam and Celine, and become Master of Phonixia.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

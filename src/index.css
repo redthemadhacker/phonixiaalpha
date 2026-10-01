@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-game: 'Outfit', sans-serif;
+    --font-heading: 'Fredoka', cursive, sans-serif;
+    --font-pixel: 'Press Start 2P', monospace;
+  }
+
+  body {
+    font-family: var(--font-game);
+  }
+}
+
+.font-pixel {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.font-heading {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Dyslexia-friendly mode class */
+.dyslexia-mode {
+  letter-spacing: 0.08em;
+  word-spacing: 0.16em;
+  line-height: 1.8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Custom voxel & fantasy glowing scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.5);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.7);
+}
+
+/* Shimmer and pulse effects for magical runes */
+@keyframes runeGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(234, 88, 12, 0.9));
+  }
+}
+
+.rune-glow {
+  animation: runeGlow 3s infinite ease-in-out;
+}
+
